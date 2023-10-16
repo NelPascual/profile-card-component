@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: #19a2ae;
+    --very-dark-desarurated-blue: #2d3248;
+    --dark-grayish-blue: #6a6f81;
+    --dark-gray: #969696;
+    --white: #fff;
+}
+
+/* ++++++++++++++ GLOBAL STYLES ++++++++++++++ */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    background-image: url(../img/bg-pattern-top.svg), url(../img/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: 75vh;
+    background-position: top -40vh left -45vh, bottom -25vh right -45vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.8rem;
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    max-width: 102rem;
+}
+
+/* ++++++++++++++ CARD ++++++++++++++ */
+
+.card-container {
+    background-color: var(--white);
+    border-radius: 1.6rem;
+    position: relative;
+}
+
+.background-card {
+    background-image: url(../img/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.6rem 1.6rem 0 0;
+    height: 14rem;
+    width: 32.8rem;
+}
+
+.text-card .name {
+    color: var(--very-dark-desarurated-blue);
+    margin-bottom: 1rem;
+    margin-top: 7.4rem;
+}
+
+.name span, .city {
+    color: var(--dark-grayish-blue);
+}
+
+.city {
+    font-size: 1.4rem;
+}
+
+.numbers-card {
+    border-radius: 0 0 1.6rem 1.6rem;
+    border-top: .5px solid var(--dark-gray);
+    display: flex;
+    justify-content: center;
+    column-gap: 6rem;
+    margin-top: 3rem;
+    padding-bottom: 2.7rem;
+    padding-top: 3rem;
+}
+
+.categories .number {
+    color: var(--very-dark-desarurated-blue);
+    font-weight: bold;
+}
+
+.categories .category {
+    color: var(--dark-grayish-blue);
+    font-size: 1rem;
+}
+
+.photo img {
+    border: .5rem solid var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: 23%;
+    left: 33%;
+}
+
+/* ++++++++++++++ FOOTER ++++++++++++++ */
+
+footer {
+    background-color: var(--very-dark-desarurated-blue);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.attribution {
+    color: var(--white);
+    padding: 0 2.4rem;
+}
+
+.attribution a {
+    color: var(--dark-cyan);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
